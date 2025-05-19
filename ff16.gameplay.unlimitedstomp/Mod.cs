@@ -60,12 +60,12 @@ public class Mod : ModBase // <= Do not Remove.
     }
 
     private void PatchstompCounter() {
-        _logger.WriteLine($"[{_modConfig.ModId}] Trying to override air action limit", _logger.ColorBlue);
+        _logger.WriteLine($"[{_modConfig.ModId}] Trying to override stomp limit", _logger.ColorBlue);
 
         var startupScannerController = _modLoader.GetController<IStartupScanner>();
         if (startupScannerController == null || !startupScannerController.TryGetTarget(out var _startupScanner))
         {
-            _logger.WriteLine($"[{_modConfig.ModId}] startupScannerController not found, failed modifing air action limit!", _logger.ColorRed);
+            _logger.WriteLine($"[{_modConfig.ModId}] startupScannerController not found, failed modifing stomp limit!", _logger.ColorRed);
             return;
         }
 
@@ -80,7 +80,7 @@ public class Mod : ModBase // <= Do not Remove.
             {
                 var incAddr = Process.GetCurrentProcess().MainModule!.BaseAddress + res.Offset;
 
-                // Replace the instruction that increments the air action counter with noops
+                // Replace the instruction that increments the stomp counter with noops
                 // before: inc byte ptr [rdi+00007250]
                 // after: nop nop nop nop nop nop
                 Span<byte> nopBytes = new byte[] { 0x90, 0x90, 0x90, 0x90, 0x90, 0x90 };
