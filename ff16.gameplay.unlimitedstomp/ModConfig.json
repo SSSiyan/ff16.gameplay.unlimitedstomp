@@ -1,0 +1,66 @@
+{
+  "ModId": "ff16.gameplay.unlimitedstomp",
+  "ModName": "Unlimited Stomp",
+  "ModAuthor": "Siyan + Recoome",
+  "ModVersion": "1.0.0",
+  "ModDescription": "Allow Clive to perform stomp unlimited times without needing to land",
+  "ModDll": "ff16.gameplay.unlimitedstomp.dll",
+  "ModR2RManagedDll32": "x86/ff16.gameplay.unlimitedstomp.dll",
+  "ModR2RManagedDll64": "x64/ff16.gameplay.unlimitedstomp.dll",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "ff16.gameplay.unlimitedstomp.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "Reloaded.Memory.SigScan.ReloadedII": {
+          "Config": {
+            "UserName": "Reloaded-Project",
+            "RepositoryName": "Reloaded.Memory.SigScan",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "Reloaded.Memory.SigScan.ReloadedII.ReleaseMetadata.json"
+        },
+        "reloaded.sharedlib.hooks": {
+          "Config": {
+            "UserName": "Sewer56",
+            "RepositoryName": "Reloaded.SharedLib.Hooks.ReloadedII",
+            "UseReleaseTag": true,
+            "AssetFileName": "reloaded.sharedlib.hooks.zip"
+          },
+          "ReleaseMetadataName": "Sewer56.Update.ReleaseMetadata.json"
+        },
+        "SharedScans.Reloaded": {
+          "Config": {
+            "UserName": "RyoTune",
+            "RepositoryName": "SharedScans",
+            "UseReleaseTag": false,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "SharedScans.Reloaded.ReleaseMetadata.json"
+        }
+      }
+    },
+    "GitHubRelease": {
+      "UserName": "SSSiyan",
+      "RepositoryName": "ff16.gameplay.unlimitedstomp",
+      "UseReleaseTag": true,
+      "AssetFileName": "Mod.zip"
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "Reloaded.Memory.SigScan.ReloadedII",
+    "reloaded.sharedlib.hooks"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "ffxvi.exe"
+  ],
+  "ProjectUrl": "https://github.com/SSSiyan/ff16.gameplay.unlimitedstomp"
+}
